@@ -25,7 +25,6 @@
     color: #000;
 }
 .free-space{
-    
     padding: 1%;
 }
 
@@ -47,7 +46,6 @@
     width: 250px;
     height: 200px;
     margin-left: 11%;
-    
 }
 .card{
     position: absolute;
@@ -69,6 +67,7 @@
     backface-visibility: hidden;
     margin-left: 15%;
     margin-top: 65%;
+    color: black;
 }
 .back{
     position: absolute;

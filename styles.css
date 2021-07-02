@@ -2,7 +2,6 @@
     margin: 0%;
     font-style: normal;
     font-family: monospace;
-    font-weight: bold;
 }
 
 .nav-main{
@@ -12,48 +11,71 @@
     border-right: 0px;
     border-style: solid;
     border-color: black;
-    display: flex;
-    flex-direction:row ;
-    position: sticky;
-    z-index: 2;
-    height: 7.5vh;
-}
-
-.nav-site-logo{
-    display:flex;
-    width: 25%;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
-}
-.nav-site-logo>a{
-    text-decoration: none;
-    color: #000;
-}
-
-.nav-btn{
-    display:flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    padding: 1%;
+    background-color: white;
+    position: fixed;
     
 }
-
-.nav-btn>a{
-    text-decoration: none;
-    display: block;
-    background: #000;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
-    width: 60px;
-    padding: 1%;
-    margin-right: 1%;
-    border: 1px solid black;
-    border-radius: 5px;
+.nav-site-logo{
+    font-size: x-large;
 }
-.nav-btn>a:hover{
-    background-color: #fff;
+.nav-site-logo>div>a{
+    font-weight: bold;
+    text-decoration: none;
     color: #000;
-    transition: 0.4s;
+}
+.blank-space-under-nav{
+    width: 100%;
+    padding: 1%;
+}
+.body-msg{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+.row-1{ 
+    display: flex;
+    flex-direction: row;
+}
+
+.card-main-containor{
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin-left: 11%;
+    
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin-left: 15%;
+    margin-top: 65%;
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
 }
